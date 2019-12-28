@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<meta property="og:url" content="http://yorunaki.github.io/eggcalc"><meta property="og:title" content="Pokémon Egg Odds Calculator"><meta property="og:type" content="article"><meta property="og:description" content="Pokémon Egg Odds Calculator"><meta property="og:site_name" content="Pokémon Egg Odds Calculator"><meta property="og:article:published_time" content="2019-12-28T00:00:00+0100"><link rel="canonical" href="yorunaki.github.io/eggcalc"><script>window.checkAndChangeSvgColor=function(c){try{var a=document.getElementById(c);if(a){c=[["border","borderColor"],["outline","outlineColor"],["color","color"]];for(var h,b,d,f=[],e=0,m=c.length;e<m;e++)if(h=window.getComputedStyle(a)[c[e][1]].replace(/\s/g,"").match(/^rgb[a]?\(([0-9]{1,3}),([0-9]{1,3}),([0-9]{1,3})/i)){b="";for(var g=1;3>=g;g++)b+=("0"+parseInt(h[g],10).toString(16)).slice(-2);"0"===b.charAt(0)&&(d=parseInt(b.substr(0,2),16),d=Math.max(16,d),b=d.toString(16)+b.slice(-4));f.push(c[e][0]+"="+b)}if(f.length){var k=a.getAttribute("data-src"),l=k+(0>k.indexOf("?")?"?":"&")+f.join("&");a.src!=l&&(a.src=l,a.outerHTML=a.outerHTML)}}}catch(n){}};</script><link rel="stylesheet" href="https://use.typekit.net/fch3vye.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-797705-6', 'auto',{"name":"wnd_header"});ga('wnd_header.set', 'dimension1', 'W2');ga('wnd_header.set', 'anonymizeIp', true);ga('wnd_header.send', 'pageview');</script></head><body class="l l-01 layout-01 c-s-l wt-home ac-h ac-i line-solid  wnd-fe">
+
+	<div class="wnd-page cs-slate ac-lemon">
+
+		<div id="wrapper" class="l-w cf t-18">
+
+			<header id="header" class="l-h cf">
+
+			</header><main id="main" class="l-m cf" role="main">
+
+				<div class="section-wrapper cf">
+	<div class="section-wrapper-content cf"><section class="s section default-01 design-01 sc-m wnd-background-solid"><div class="section-bg s-bg">
+		<div class="section-bg-layer wnd-background-solid  bgatt-scroll bgpos-center-center" style="background-color:#0C0C0C">
+
+		</div>
+		<div class="section-bg-layer section-bg-overlay"></div>
+	</div>
+	<div class="section-inner">
+		<div class="content ez cf">
+	<div class="ez-c">
+		<div class="b b-text text cf design-01">
+	<div class="b-c b-s b-s-t60 b-s-b60 text-content cf"><h3 class="wnd-align-center"><br></h3>
+
+<h1>Pokémon Egg Odds Calculator<br></h1><div><h3 class="wnd-align-center">Check your odds for a perfect offspring!</h3>
+<p><br></p></div>
+</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c"><div class="column-content c pr cf" style="width:25.001%;">
+	<div class="c-c"><div class="b b-html b-s">
+	<div class="b-c">
+		<div class="hpiv1">
+  			                    <input class="hp1input" type="checkbox" value="" id="hp1" onclick="calc()">
+  								  <label class="checkbox-hp1" for="fatherhp"> HP
+                                    </label>
+  			</div>
+  			<div class="atkiv1">
+  			                    <input class="atk1input" type="checkbox" value="" id="atk1" onclick="calc()">
+  								  <label class="checkbox-atk1" for="fatheratk"> Atk
+  						         </label>
+  			</div>
+  			<div class="defiv1">
+  			                    <input class="def1input" type="checkbox" value="" id="def1" onclick="calc()">
+  								  <label class="checkbox-def1" for="fatherdef"> Def
+  						         </label>
+  			</div>
+  			<div class="satkiv1">
+  			                    <input class="satk1input" type="checkbox" value="" id="satk1" onclick="calc()">
+  								  <label class="checkbox-satk1" for="fathersatk"> Sp. Atk
+  						         </label>
+  			</div>
+  			<div class="sdefiv1">
+  			                    <input class="sdef1input" type="checkbox" value="" id="sdef1" onclick="calc()">
+  								  <label class="checkbox-sdef1" for="fathersdef"> Sp. Def
+  						         </label>
+  			</div>
+  			<div class="speiv1">
+  						         <input class="spe1input" type="checkbox" value="" id="spe1" onclick="calc()">
+  								   <label class="checkbox-spe1" for="fatherspe"> Speed
+  							      </label>
+  			</div>
+	</div>
+</div></div>
+</div><div class="column-content c pr cf" style="width:25.001%;">
+	<div class="c-c"><div class="b b-html b-s">
+	<div class="b-c">
+		<div class="hpiv2">
+  			                    <input class="hp2input" type="checkbox" value="" id="hp2" onclick="calc()">
+  								  <label class="checkbox-hp2" for="motherhp"> HP
+  						         </label>
+  			</div>
+  			<div class="atkiv2">
+  			                    <input class="atk2input" type="checkbox" value="" id="atk2" onclick="calc()">
+  								  <label class="checkbox-atk2" for="motheratk"> Atk
+  						         </label>
+  			</div>
+  			<div class="defiv2">
+  			                    <input class="def2input" type="checkbox" value="" id="def2" onclick="calc()">
+  								  <label class="checkbox-def2" for="motherdef"> Def
+  						         </label>
+  			</div>
+  			<div class="satkiv2">
+  			                    <input class="satk2input" type="checkbox" value="" id="satk2" onclick="calc()">
+  								  <label class="checkbox-satk2" for="mothersatk"> Sp. Atk
+  						         </label>
+  			</div>
+  			<div class="sdefiv2">
+  			                    <input class="sdef2input" type="checkbox" value="" id="sdef2" onclick="calc()">
+  								  <label class="checkbox-sdef2" for="mothersdef"> Sp. Def
+  						         </label>
+  			</div>
+  			<div class="speiv2">
+  						         <input class="spe2input" type="checkbox" value="" id="spe2" onclick="calc()">
+  								   <label class="checkbox-spe2" for="motherspe"> Speed
+  							      </label>
+  			</div>
+	</div>
+</div></div>
+</div><div class="column-content c pr cf" style="width:24.999%;">
+	<div class="c-c"><div class="b b-html b-s">
+	<div class="b-c">
+		<div class="hpiv3">
+  					                    <input class="hp3input" type="checkbox" value="" id="hp3" onclick="calc()">
+  										  <label class="checkbox-hp3" for="ignorehp"> HP
+  								         </label>
+  					</div>
+  					<div class="atkiv3">
+  					                    <input class="atk3input" type="checkbox" value="" id="atk3" onclick="calc()">
+  										  <label class="checkbox-atk3" for="ignoreatk"> Atk
+  								         </label>
+  					</div>
+  					<div class="defiv3">
+  					                    <input class="def3input" type="checkbox" value="" id="def3" onclick="calc()">
+  										  <label class="checkbox-def3" for="ignoredef"> Def
+  								         </label>
+  					</div>
+  					<div class="satkiv3">
+  					                    <input class="satk3input" type="checkbox" value="" id="satk3" onclick="calc()">
+  										  <label class="checkbox-satk3" for="ignoresatk"> Sp. Atk
+  								         </label>
+  					</div>
+  					<div class="sdefiv3">
+  					                    <input class="sdef3input" type="checkbox" value="" id="sdef3" onclick="calc()">
+  										  <label class="checkbox-sdef3" for="ignoresdef"> Sp. Def
+  								         </label>
+  					</div>
+  					<div class="speiv3">
+  								         <input class="spe3input" type="checkbox" value="" id="spe3" onclick="calc()">
+  										   <label class="checkbox-spe3" for="ignorespe"> Speed
+  									      </label>
+  			</div>
+	</div>
+</div></div>
+</div><div class="column-content c pr cf" style="width:24.999%;">
+	<div class="c-c"><div class="b b-html b-s">
+	<div class="b-c">
+		<div class="ha">
+              							  <input class="ha" type="checkbox" value="" id="ha" onclick="calc()">
+  					 				        <label class="checkbox-ha" for="hidden"> Hidden Ability?
+  									      </label>
+                  </div>
+                  <div class="masuda">
+  				            			  <input class="masuda" type="checkbox" value="" id="mm" onclick="calc()">
+  									        <label class="checkbox-mm" for="masuda"> Masuda Method?
+  									      </label>
+                  </div>
+                  <div class="charm">
+              							  <input class="charm" type="checkbox" value="" id="sc" onclick="calc()">
+  					 				        <label class="checkbox-sc" for="charm"> Shiny Charm?
+  									      </label>
+                  </div>
+	</div>
+</div></div>
+</div></div>
+</div><div class="b b-html b-s">
+	<div class="b-c">
+		<div class="results">
+                  <h2 id="control">Results</h2></div>
+                  	<h4><div id="chanceegg"></div>
+                    <div id="expegg"></div>
+                    <div id="cf5e"></div>
+                    <div id="cf30e"></div>
+                    <div id="cf120e"></div>
+                    <div id="cf960e"></div>
+                    <br>
+                    <div id="chanceshiny"></div>
+                    <div id="expshiny"></div>
+                    <div id="cf5s"></div>
+                    <div id="cf30s"></div>
+                    <div id="cf120s"></div>
+                    <div id="cf960s"></div>
+                    </h4>
+
+
+
+      <script>
+  	function calc() {
+    	var s1h, s1a, s1b, s1c, s1d, s1s, s2h, s2a, s2b, s2c, s2d, s2s, s3h, s3a, s3b, s3c, s3d, s3s, s4h, s4a, s4b, s4c, s4d, s4s, s5h, s5a, s5b, s5c, s5d, s5s, s6h, s6a, s6b, s6c, s6d, s6s, s7h, s7a, s7b, s7c, s7d, s7s, sfinal;
+		var chanceegg, expegg, tempshiny, chanceshiny, expshiny, c5e, c30e, c120e, c960e, c5s, c30s, c120s, c960s;
+  	//check var values
+    if (document.getElementById("hp1").checked == true) hp1 = 1; else hp1 = 0;
+  	if (document.getElementById("hp2").checked == true) hp2 = 1; else hp2 = 0;
+  	if (document.getElementById("hp3").checked == true) hp3 = 1; else hp3 = 0;
+  	if (document.getElementById("atk1").checked == true) atk1 = 1; else atk1 = 0;
+  	if (document.getElementById("atk2").checked == true) atk2 = 1; else atk2 = 0;
+  	if (document.getElementById("atk3").checked == true) atk3 = 1; else atk3 = 0;
+  	if (document.getElementById("def1").checked == true) def1 = 1; else def1 = 0;
+  	if (document.getElementById("def2").checked == true) def2 = 1; else def2 = 0;
+  	if (document.getElementById("def3").checked == true) def3 = 1; else def3 = 0;
+  	if (document.getElementById("satk1").checked == true) satk1 = 1; else satk1 = 0;
+  	if (document.getElementById("satk2").checked == true) satk2 = 1; else satk2 = 0;
+  	if (document.getElementById("satk3").checked == true) satk3 = 1; else satk3 = 0;
+  	if (document.getElementById("sdef1").checked == true) sdef1 = 1; else sdef1 = 0;
+  	if (document.getElementById("sdef2").checked == true) sdef2 = 1; else sdef2 = 0;
+  	if (document.getElementById("sdef3").checked == true) sdef3 = 1; else sdef3 = 0;
+  	if (document.getElementById("spe1").checked == true) spe1 = 1; else spe1 = 0;
+  	if (document.getElementById("spe2").checked == true) spe2 = 1; else spe2 = 0;
+  	if (document.getElementById("spe3").checked == true) spe3 = 1; else spe3 = 0;
+  	if (document.getElementById("ha").checked == true) ha = 0.6; else ha = 0.8;
+  	if (document.getElementById("mm").checked == true) mm = 6; else mm = 1;
+  	if (document.getElementById("sc").checked == true) sc = 3; else sc = 1;
+  	//random hp
+  	if (hp3 === 1) s1h = 1; else s1h = 1/32;
+  	if (atk3 === 1) s1a = 1; else s1a = (atk1 + atk2)/2;
+  	if (def3 === 1) s1b = 1; else s1b = (def1 + def2)/2;
+  	if (satk3 === 1) s1c = 1; else s1c = (satk1 + satk2)/2;
+  	if (sdef3 === 1) s1d = 1; else s1d = (sdef1 + sdef2)/2;
+    if (spe3 === 1) s1s = 1; else s1s = (spe1 + spe2)/2;
+    	//random atk
+  	if (hp3 === 1) s2h = 1; else s2h = (hp1 + hp2)/2;
+  	if (atk3 === 1) s2a = 1; else s2a = 1/32;
+    if (def3 === 1) s2b = 1; else s2b = (def1 + def2)/2;
+   	if (satk3 === 1) s2c = 1; else s2c = (satk1 + satk2)/2;
+    if (sdef3 === 1) s2d = 1; else s2d = (sdef1 + sdef2)/2;
+    if (spe3 === 1) s2s = 1; else s2s = (spe1 + spe2)/2;
+    	//random def
+    if (hp3 === 1) s3h = 1; else s3h = (hp1 + hp2)/2;
+  	if (atk3 === 1) s3a = 1; else s3a = (atk1 + atk2)/2;
+  	if (def3 === 1) s3b = 1; else s3b = 1/32;
+  	if (satk3 === 1) s3c = 1; else s3c = (satk1 + satk2)/2;
+  	if (sdef3 === 1) s3d = 1; else s3d = (sdef1 + sdef2)/2;
+    if (spe3 === 1) s3s = 1; else s3s = (spe1 + spe2)/2;
+    	//random satk
+    if (hp3 === 1) s4h = 1; else s4h = (hp1 + hp2)/2;
+  	if (atk3 === 1) s4a = 1; else s4a = (atk1 + atk2)/2;
+  	if (def3 === 1) s4b = 1; else s4b = (def1 + def2)/2;
+  	if (satk3 === 1) s4c = 1; else s4c = 1/32;
+  	if (sdef3 === 1) s4d = 1; else s4d = (sdef1 + sdef2)/2;
+    if (spe3 === 1) s4s = 1; else s4s = (spe1 + spe2)/2;
+    	//random sdef
+    if (hp3 === 1) s5h = 1; else s5h = (hp1 + hp2)/2;
+  	if (atk3 === 1) s5a = 1; else s5a = (atk1 + atk2)/2;
+  	if (def3 === 1) s5b = 1; else s5b = (def1 + def2)/2;
+  	if (satk3 === 1) s5c = 1; else s5c = (satk1 + satk2)/2;
+  	if (sdef3 === 1) s5d = 1; else s5d = 1/32;
+    if (spe3 === 1) s5s = 1; else s5s = (def1 + def2)/2;
+    	//random spe
+    if (hp3 === 1) s6h = 1; else s6h = (hp1 + hp2)/2;
+  	if (atk3 === 1) s6a = 1; else s6a = (atk1 + atk2)/2;
+  	if (def3 === 1) s6b = 1; else s6b = (def1 + def2)/2;
+  	if (satk3 === 1) s6c = 1; else s6c = (satk1 + satk2)/2;
+  	if (sdef3 === 1) s6d = 1; else s6d = (sdef1 + sdef2)/2;
+    if (spe3 === 1) s6s = 1; else s6s = 1/32;
+    	//averages
+    s7h = (s1h * s1a * s1b * s1c * s1d * s1s);
+    s7a = (s2h * s2a * s2b * s2c * s2d * s2s);
+    s7b = (s3h * s3a * s3b * s3c * s3d * s3s);
+    s7c = (s4h * s4a * s4b * s4c * s4d * s4s);
+    s7d = (s5h * s5a * s5b * s5c * s5d * s5s);
+    s7s = (s6h * s6a * s6b * s6c * s6d * s6s);
+    sfinal = ((s7h + s7a + s7b + s7c + s7d + s7s)/6);
+    	//final calcs
+    chanceegg = (sfinal * ha);
+    var chanceeggvar = Math.round(chanceegg*1000000)
+    expegg = Math.ceil(1 / chanceegg);
+    tempshiny = ((mm + sc - 1) / 4096);
+    chanceshiny = (tempshiny * chanceegg);
+    var chanceshinyvar = Math.round(chanceshiny*1000000)
+    expshiny = Math.ceil(1 / chanceshiny)
+    c5e = Math.pow((1 - chanceegg) , 5);
+    c30e = Math.pow((1 - chanceegg) , 30);
+    c120e = Math.pow((1 - chanceegg) , 120);
+    c960e = Math.pow((1 - chanceegg) , 960);
+    c5s = Math.pow((1 - chanceshiny) , 5);
+  	c30s = Math.pow((1 - chanceshiny) , 30);
+  	c120s = Math.pow((1 - chanceshiny) , 120);
+    c960s = Math.pow((1 - chanceshiny) , 960);
+    var cf5e = Math.round((1 - c5e)*1000000);
+       var cf30e = Math.round((1 - c30e)*1000000);
+	var cf120e = Math.round((1 - c120e)*1000000);
+	var cf960e = Math.round((1 - c960e)*1000000);
+	var cf5s = Math.round((1 - c5s)*1000000);
+	var cf30s = Math.round((1 - c30s)*1000000);
+	var cf120s = Math.round((1 - c120s)*1000000);
+	var cf960s = Math.round((1 - c960s)*1000000);
+    	//parse
+        document.getElementById('chanceegg').innerHTML = "Chance of hatching a Perfect Egg: " + (chanceeggvar/10000) + "%";
+    document.getElementById('expegg').innerHTML = "You should expect to get a perfect egg after " + expegg + " tries";
+    document.getElementById('cf5e').innerHTML = "You'll get your perfect egg " + (cf5e/10000) + "% of time in your first 5 eggs";
+document.getElementById('cf30e').innerHTML = "You'll get your perfect egg " + (cf30e/10000) + "% of time in your first box";
+document.getElementById('cf120e').innerHTML = "You'll get your perfect egg " + (cf120e/10000) + "% of time in your first 4 boxes";
+document.getElementById('cf960e').innerHTML = "You'll get your perfect egg " + (cf960e/10000) + "% of time by the time you fill all your boxes";
+document.getElementById('chanceshiny').innerHTML = "Chance of hatching a perfect shiny Egg: " + (chanceshinyvar/10000) + "%";
+    document.getElementById('expshiny').innerHTML = "You should expect to get a perfect shiny egg after " + expshiny + " tries";
+    document.getElementById('cf5s').innerHTML = "You'll get your perfect shiny egg " + (cf5s/10000) + "% of time in your first 5 eggs";
+document.getElementById('cf30s').innerHTML = "You'll get your perfect shiny egg " + (cf30s/10000) + "% of time in your first box";
+document.getElementById('cf120s').innerHTML = "You'll get your perfect shiny egg " + (cf120s/10000) + "% of time in your first 4 boxes";
+document.getElementById('cf960s').innerHTML = "You'll get your perfect shiny egg " + (cf960s/10000) + "% of time by the time you fill all your boxes";
+  	}
+  </script>
+	</div>
+</div>
+	</div>
+
+</div>
+	</div>
+</section></div>
+</div>
