@@ -5,6 +5,33 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
+  <style>
+.tooltip {
+  position: relative;
+  display: inline;
+  border-bottom: 1px dotted white;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 165px;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
 	<head>
 		<title>Pokemon Egg Odds Calculator</title>
 		<meta charset="utf-8" />
@@ -19,12 +46,12 @@
 				<!-- Header -->
 					<header id="header">
 
-						<h1>Pokemon Egg Odds Calculator<br></h1><div><h3 class="wnd-align-center">Check your odds for a perfect offspring!</h3>
-						<p><br></p></div>
+						<h1>Pokemon Egg Odds Calculator</h1><div><h3 class="tooltip">Check your odds for a perfect offspring!<span class="tooltiptext">This tool assumes you're using Destiny Knot and Everstone.</span></h3>
+						<p></p></div>
 						</div>
 						</div><div class="column">
 
-								<div class="hpiv1">Father/Ditto IV's<br>
+								<div><div class="tooltip">Father/Ditto IV's<span class="tooltiptext">Input here which perfect IVs male/ditto pokémon have.</span><br></div>
 						  			                    <input class="hp1" type="checkbox" value="" id="hp1" onclick="calc()">
 						  								  <label class="hp1" for="hp1"> HP
 						                                    </label>
@@ -57,7 +84,7 @@
 							</div>
 						</div></div>
 						</div><div class="column">
-								<div class="hpiv2">Mother IV's<br>
+								<div><div class="tooltip">Mother IV's<span class="tooltiptext">Input here which perfect IVs female pokémon have.</span><br></div>
 						  			                    <input class="hp2" type="checkbox" value="" id="hp2" onclick="calc()">
 						  								  <label class="hp2" for="hp2"> HP
 						  						         </label>
@@ -90,7 +117,7 @@
 							</div>
 						</div></div>
 						</div><div class="column">
-								<div class="hpiv3">Ignore Offspring IV's<br>
+								<div><div class="tooltip">Ignore Offspring IV's<span class="tooltiptext">Input here if a specific perfect IV is unneeded (ex. Sp.Atk on a physical attacker).</span><br></div>
 						  					                    <input class="hp3" type="checkbox" value="" id="hp3" onclick="calc()">
 						  										  <label class="hp3" for="hp3"> HP
 						  								         </label>
@@ -125,17 +152,17 @@
 						</div><div class="column">
 								<div class="ha">Other Options <br>
 						              							  <input class="ha" type="checkbox" value="" id="ha" onclick="calc()">
-						  					 				        <label class="ha" for="ha"> Hidden Ability?
+						  					 				        <label class="tooltip" for="ha"> Hidden Ability?<span class="tooltiptext">Check this if you're breeding for a Hidden Ability</span></br>
 						  									      </label>
 						                  </div>
-						                  <div class="masuda">
+						                  <div class="mm">
 						  				            			  <input class="mm" type="checkbox" value="" id="mm" onclick="calc()">
-						  									        <label class="mm" for="mm"> Masuda Method?
-						  									      </label>
+						  									        <label class="tooltip" for="mm"> Masuda Method?<span class="tooltiptext">Check this if you're breeding pokemon from different languages (only affects shiny rate)</span><br>
+                                         </label>
 						                  </div>
 						                  <div class="charm">
 						              							  <input class="sc" type="checkbox" value="" id="sc" onclick="calc()">
-						  					 				        <label class="sc" for="sc"> Shiny Charm?
+						  					 				        <label class="tooltip" for="sc"> Shiny Charm?<span class="tooltiptext">Check this if you've obtained the Shiny Charm item (only affects shiny rate)</span><br>
 						  									      </label>
 						                  </div>
 							</div>
